@@ -15,14 +15,6 @@
 import sys
 import os
 import json
-import math
-import datetime
-
-# Configure standard output for UTF-8 encoding strings safely
-if hasattr(sys.stdout, 'reconfigure'):
-    sys.stdout.reconfigure(encoding='utf-8')
-
-# Data Science & Visualization Dependencies
 import numpy as np
 import pandas as pd
 import matplotlib
@@ -34,11 +26,7 @@ import matplotlib.patches as mpatches
 #  LAB 1 – STUDENT REGISTRATION & GRADE EVALUATION
 #  Topics: variables, input/output, if-elif-else, loops, lists
 # ═══════════════════════════════════════════════════════════════════════════════
-
-
 students = {}
-
-
 def assign_grade(marks):
     """Return letter grade and result based on average marks (0-100)."""
     if marks >= 90:
